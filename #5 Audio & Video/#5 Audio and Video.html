@@ -1,0 +1,49 @@
+<!-- https://youtu.be/C8HuXXlmQLc -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Audio & Video</title>
+    </head>
+
+    <body>
+
+        <audio controls>
+            <source src="./audio/Cupid.mp3" type="audio/mp3"/>
+            <source src="./audio/Cupid.ogg" type="audio.ogg"/> <!-- If the first audio is not working, this second one will play -->
+            Audio Tag is not supported. <!-- This message will appear if the audio tag is not supported -->
+        </audio> <br> <!-- Just default controls -->
+
+        <audio controls autoplay>
+            <source src="./audio/Cupid.mp3"/>
+            Audio Tag is not supported.
+        </audio> <br> <!-- The audio will autoplay -->
+
+        <audio controls loop>
+            <source src="./audio/Cupid.mp3"/>
+            Audio Tag is not supported.
+        </audio> <br> <!-- The audio will loop -->
+
+        <audio controls muted>
+            <source src="./audio/Cupid.mp3"/>
+            Audio Tag is not supported.
+        </audio> <br> <!-- The audio will be muted -->
+
+        <audio src="./audio/Cupid.mp3" controls>
+            Audio Tag is not supported.
+        </audio> <br> <!-- No source element, walang pag pipilian na audio if ever di gumagana yung nauna -->
+
+        <video controls width="720">
+            <source src="./video/Cupid.mp4" type="video/mp4"/>
+            <source src="./video/Cupid.ogg" type="video/ogg"/>
+            Video Tag is not supported.
+        </video> <!-- Just the same as audio -->
+
+        <video controls width="720" src="./video/Cupid.mp4">
+            Video Tag is not supported.
+        </video> 
+
+    </body>
+    
+</html>

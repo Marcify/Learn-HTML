@@ -1,0 +1,85 @@
+<!-- https://youtu.be/lafECAi4F5k -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>List</title>
+
+        <style>
+            table,tr,th,td{
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+            }
+
+            caption{
+                text-align: left; /* it will move the caption text to the left of the table*/
+                caption-side: bottom; /* it will put the caption to the bottom of the table */
+            }
+
+            thead{
+                background-color: lime; /* will make the table headings background lime*/
+            }
+
+        </style> <!-- table,tr,th, and td will have a (border) style -->
+
+    </head>
+
+    <body>
+
+        <table>
+            <caption>Caption</caption> <!-- center aligned by default and on top of the table -->
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Course</th>
+            </tr>
+            <tr>
+                <td>1</td> <!-- Table Contents -->
+                <td>Marc</td>
+                <td>BSIT</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Darel</td>
+                <td>BSCS</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table>
+            <caption>Semester Grade</caption>
+            <thead> <!-- Table Head -->
+                <tr>
+                    <th rowspan="2">Names</th> <!-- the Names will span up to 2 rows which will cover C++ and Java and Marc -->
+                    <th colspan="2">Subjects</th> <!-- the Subjcts will span up to 2 colums which will cover C++ and Java and the grades -->
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>Java</td>
+                </tr>
+            </thead> <!-- Table Head -->
+            <tbody> <!-- Table Body -->
+                <tr>
+                    <td>Marc</td>
+                    <td>94</td>
+                    <td>92</td>
+                </tr>
+                <tr>
+                    <td>Darel</td>
+                    <td>96</td>
+                    <td>94</td>
+                </tr>
+            </tbody> <!-- Table Body -->
+            <tfoot> <!-- Table Footer -->
+                <tr>
+                    <td colspan="3">Demo Row</td>
+                </tr>
+            </tfoot> <!-- Table Footer -->
+        </table>
+
+    </body>
+    
+</html>
